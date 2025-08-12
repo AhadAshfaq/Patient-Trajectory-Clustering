@@ -1,23 +1,23 @@
 # Clustering Patient Lab Trajectories from Electronic Health Records
 ## Overview
-This repository provides a modular data science pipeline for clustering hospital patient lab trajectories using unsupervised machine learning. Designed for working with time series extracted from MIMIC-IV electronic health records, the project enables exploration and identification of meaningful patient subgroups—such as clinical patterns preceding hospital discharge—through advanced clustering and comprehensive evaluation.
+This repository provides a modular data science pipeline for clustering hospital patient lab trajectories using unsupervised machine learning. Designed for working with time series extracted from MIMIC-IV Electronic health records, the project supports time-series preprocessing, multiple distance metrics, and advanced clustering algorithms for medical time series analysis, enabling exploration and identification of meaningful patient subgroups, such as clinical patterns preceding hospital discharge through advanced clustering and comprehensive evaluation.
 
 ## Features
 ### Data Extraction & Preprocessing
-* SQL-based cohort selection for pre-discharge (e.g., 14-day) lab data
+* SQL-based cohort selection for pre-discharge (e.g., 7-day) lab data
 * Customisable lab feature selection by measurement frequency
 * Temporal discretisation (e.g., aggregation into 24-hour bins)
-* Versatile missing data handling: interpolation, forward/backward filling, KNN imputation
+* Versatile missing data handling: Nomralization, Interpolation, Forward/Backward filling, KNN imputation
 * Support for both numeric and binary (present/absent) lab datasets
 
 ### Multiple Input Representations
-* Imputed (complete) numeric time series matrices
 * Non-imputed numeric matrices (for pairwise-measured distance computation)
+* Nomralized, interpolated & imputed (complete) numeric time series matrices
 * Binary matrices indicating lab presence/absence
 
 ### Flexible Distance Metrics
 * Euclidean, Manhattan, Mahalanobis, and Cosine distances
-* Dynamic Time Warping (DTW: standard and fast implementations)
+* Dynamic Time Warping (DTW: standard (tslearn) and fast (dtaidistance) implementations)
 * Binary metrics: Hamming, Jaccard, Dice
 
 ### Clustering Algorithms
@@ -45,14 +45,15 @@ This repository provides a modular data science pipeline for clustering hospital
 
 ## Directory Structure
 ```
-├── main.py               # Pipeline orchestration script
-├── imports.py            # Central package imports
-├── hyperparameters.py    # Central config of all parameters and experiment toggles
-├── utils.py              # Preprocessing functions and helpers 
-├── clustering.py         # Distance metrics, clustering algorithms, and evaluators 
-├── /data                 # Input cohort/lab data (user-supplied) 
-├── /results              # Outputs: parameterised subfolders for all experiments 
-├── /plots                # All generated visualisations 
+├── main.py                    # Pipeline orchestration script
+├── imports.py                 # Central package imports
+├── hyperparameters.py         # Central config of all parameters and experiment toggles
+├── utils.py                   # Preprocessing functions and helpers 
+├── clustering.py              # Distance metrics, clustering algorithms, and evaluators 
+├── /preprocessing_data        # Input cohort/lab data (user-supplied) and all necessary preprocessed data
+├── /distance_matrices         # Load/save required distance matrix  
+├── /metric_results            # Outputs: parameterised subfolders for all experiments 
+├── /plots                     # All generated visualisations 
 ├── README.md
 ```
 
@@ -83,7 +84,7 @@ python main.py
 ## Customisation & Extensibility
 * Add Input Types: Extend or modify data processing routines in utils.py.
 * Add Distance Metrics or Clustering Methods: Implement in clustering.py.
-* Enable/Disable Pipeline Stages: Set the relevant toggles in hyperparameters.py (RUN_FLAGS).
+* Enable/Disable Pipeline Stages: Set the relevant toggles & parameters in hyperparameters.py (RUN_FLAGS).
 * Save new outputs: Use or extend provided helper functions for fully reproducible results.
 
 ## Reproducibility
