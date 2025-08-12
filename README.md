@@ -43,8 +43,8 @@ This repository provides a modular data science pipeline for clustering hospital
 * Central configuration for all pipeline options and experiment flags
 * Results caching for fast repeatability
 
-```
 ## Directory Structure
+```
 ├── main.py               # Pipeline orchestration script
 ├── imports.py            # Central package imports
 ├── hyperparameters.py    # Central config of all parameters and experiment toggles
@@ -58,9 +58,10 @@ This repository provides a modular data science pipeline for clustering hospital
 
 ## Installation
 ### 1. Clone the Repository
+```
 git clone https://github.com/yourusername/patient-trajectory-clustering.git
 cd patient-trajectory-clustering
-
+```
 ### 2. Install Dependencies
 pip install -r requirements.txt
 
