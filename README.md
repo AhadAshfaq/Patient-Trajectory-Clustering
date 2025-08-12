@@ -76,6 +76,7 @@ To run the pipeline with the current configuration:
 ```
 python main.py
 ```
+
 * Adjust experiment settings (lab feature selection, window length, clustering methods, etc.) in hyperparameters.py.
 * Modular execution flags allow running only specific pipeline stages or algorithm variants.
 
