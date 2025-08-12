@@ -43,6 +43,7 @@ This repository provides a modular data science pipeline for clustering hospital
 * Central configuration for all pipeline options and experiment flags
 * Results caching for fast repeatability
 
+```
 ## Directory Structure
 ├── main.py               # Pipeline orchestration script
 ├── imports.py            # Central package imports
@@ -53,6 +54,7 @@ This repository provides a modular data science pipeline for clustering hospital
 ├── /results              # Outputs: parameterised subfolders for all experiments 
 ├── /plots                # All generated visualisations 
 ├── README.md
+```
 
 ## Installation
 ### 1. Clone the Repository
