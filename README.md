@@ -1,6 +1,8 @@
 # Clustering Patient Lab Trajectories from Electronic Health Records
 ## Overview
+```
 This repository provides a modular data science pipeline for clustering hospital patient lab trajectories using unsupervised machine learning. Designed for working with time series extracted from MIMIC-IV electronic health records, the project enables exploration and identification of meaningful patient subgroups—such as clinical patterns preceding hospital discharge—through advanced clustering and comprehensive evaluation.
+```
 
 ## Features
 ### Data Extraction & Preprocessing
@@ -63,15 +65,21 @@ git clone https://github.com/yourusername/patient-trajectory-clustering.git
 cd patient-trajectory-clustering
 ```
 ### 2. Install Dependencies
+```
 pip install -r requirements.txt
+```
 
 ### 3. Prepare Data
+```
 Place the relevant cohort and lab events files in the /data directory.
 Make sure you have appropriate permissions for the dataset (e.g., MIMIC-IV).
+```
 
 ## Usage
+```
 To run the pipeline with the current configuration:
 python main.py
+```
 
 * Adjust experiment settings (lab feature selection, window length, clustering methods, etc.) in hyperparameters.py.
 * Modular execution flags allow running only specific pipeline stages or algorithm variants.
@@ -92,10 +100,9 @@ Open to issues and pull requests for improvements, bugfixes, or new experiment m
 
 ## License
 MIT License
-
+```
 For further details, see the code comments and function docstrings, or reach out via GitHub.
-
-
+```
 
 
 
