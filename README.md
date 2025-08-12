@@ -47,11 +47,11 @@ This repository provides a modular data science pipeline for clustering hospital
 ├── main.py               # Pipeline orchestration script
 ├── imports.py            # Central package imports
 ├── hyperparameters.py    # Central config of all parameters and experiment toggles
-├── utils.py              # Preprocessing functions and helpers
-├── clustering.py         # Distance metrics, clustering algorithms, and evaluators
-├── /data                 # Input cohort/lab data (user-supplied)
-├── /results              # Outputs: parameterised subfolders for all experiments
-├── /plots                # All generated visualisations
+├── utils.py              # Preprocessing functions and helpers 
+├── clustering.py         # Distance metrics, clustering algorithms, and evaluators 
+├── /data                 # Input cohort/lab data (user-supplied) 
+├── /results              # Outputs: parameterised subfolders for all experiments 
+├── /plots                # All generated visualisations 
 ├── README.md
 
 ## Installation
