@@ -97,7 +97,7 @@ Open to issues and pull requests for improvements, bugfixes, or new experiment m
 ## License
 MIT License
 
-###
+## Further Information
 For further details, see the code comments and function docstrings, or reach out via GitHub.
 
 
