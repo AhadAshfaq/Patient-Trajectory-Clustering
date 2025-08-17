@@ -13,7 +13,7 @@ This repository provides a modular data science pipeline for clustering hospital
 ### Multiple Input Representations
 * Non-imputed numeric matrices (for pairwise-measured distance computation)
 * Non-imputed normalized numeric matrices (for pairwise-measured distance computation)
-* Nomralized, interpolated & imputed (complete) numeric time series matrices
+* Normalized, interpolated & imputed (complete) numeric time series matrices
 * Binary matrices indicating lab presence/absence
 
 ### Flexible Distance Metrics
