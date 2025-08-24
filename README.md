@@ -85,7 +85,7 @@ This project requires the following **two key input files** for preprocessing:
    - Alternatively, users can prepare and provide their own lab event extracts in the same format.
 
 3. **Data Placement:**
-   - Place the relevant cohort and lab events files in the`/data` directory.
+   - Place the required cohort and lab events files inside the /data directory at the root of the project. Ensure that the file paths in the load_data() function within main.py correctly point to these files before running the pipeline.
 
 ## Usage
 To run the pipeline with the current configuration:
