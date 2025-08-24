@@ -73,19 +73,19 @@ This project requires the following **two key input files** for preprocessing:
 
 1. **Cohort File (`cohort1_target.csv`):**  
    Contains patient-level and admission-level metadata including patient IDs, admission IDs, and key outcomes (e.g., admission and discharge times , target labels).  
-   - **File size:** Relatively small  
-   - **Provision:** Included in this repository as `cohort1_target.csv`
+   * **File size:** Relatively small  
+   * **Provision:** Included in this repository as `cohort1_target.csv`
 
 2. **Lab Events File (`labevents.csv`):**  
    Contains detailed laboratory measurement records linked to patient admissions, with timestamps and lab test identifiers.  
-   - **File size:** Very large (e.g., >17 GB), too large to host here.  
-   - **Provision:** Due to size, this file is **NOT included** in the repository.  
-   - **Access instructions:** The data is sourced from the [MIMIC-IV Clinical Database](https://physionet.org/content/mimiciv).  
+   * **File size:** Very large (e.g., >17 GB), too large to host here.  
+   * **Provision:** Due to size, this file is **NOT included** in the repository.  
+   * **Access instructions:** The data is sourced from the [MIMIC-IV Clinical Database](https://physionet.org/content/mimiciv).  
      Researchers must obtain access via credentialed request and download the relevant `hosp/labevents` extraction.  
-   - Alternatively, users can prepare and provide their own lab event extracts in the same format.
+   * Alternatively, users can prepare and provide their own lab event extracts in the same format.
 
 3. **Data Placement:**
-   - Place the required cohort and lab events files inside the /data directory at the root of the project. Ensure that the file paths in the load_data() function within main.py correctly point to these files before running the pipeline.
+   * Place the required cohort and lab events files inside the /data directory at the root of the project. Ensure that the file paths in the load_data() function within main.py correctly point to these files before running the pipeline.
 
 ## Usage
 To run the pipeline with the current configuration:
