@@ -7,16 +7,16 @@ This repository provides a modular data science pipeline for clustering hospital
 * SQL-based cohort selection for pre-discharge (e.g., 7-day) lab data
 * Customisable lab feature selection by measurement frequency
 * Temporal discretisation (e.g., aggregation into 24-hour bins)
-* Versatile missing data handling: Nomralization, Interpolation, Forward/Backward filling, KNN imputation
+* Versatile missing data handling: Normalization, Interpolation, KNN imputation
 * Support for both numeric and binary (present/absent) lab datasets
 
 ### Multiple Input Representations
-* Non-imputed numeric matrices (for pairwise-measured distance computation)
-* Non-imputed normalized numeric matrices (for pairwise-measured distance computation)
-* Normalized, interpolated & imputed (complete) numeric time series matrices
+* Non-imputed numeric vector (for pairwise-measured distance computation)
+* Non-imputed normalized numeric vector (for pairwise-measured distance computation)
+* Normalized & imputed (complete) numeric time series vector
 * Binary matrices indicating lab presence/absence
 
-### Flexible Distance Metrics
+### Flexible Distance Matrices
 * Euclidean, Manhattan, Mahalanobis, and Cosine distances
 * Dynamic Time Warping (DTW: standard (tslearn) and fast (dtaidistance) implementations)
 * Binary metrics: Hamming, Jaccard, Dice
@@ -25,7 +25,7 @@ This repository provides a modular data science pipeline for clustering hospital
 * KMeans
 * KMedoids
 * Agglomerative Hierarchical Clustering (supporting all standard linkages and metric types)
-* DBSCAN
+* Density Based Spatial Clustering of Applications with Noise - DBSCAN
 * Spectral Clustering
 
 ### Comprehensive Evaluation
@@ -37,7 +37,7 @@ This repository provides a modular data science pipeline for clustering hospital
 ### Output & Logging
 * Experiment results saved to parameterised folders (all relevant thresholds/choices encoded in folder names)
 * Intermediate and final artefacts: preprocessed datasets, distance matrices, cluster labels, evaluation scores, and statistical results
-* Option to aggregate all output metrics in master CSV files
+* Possibility to aggregate all output metrics in master CSV files
 
 ### Reproducibility & Extensibility
 * Modular OOP codebase for easy maintenance or extension (new methods, representations, or studies)
@@ -53,15 +53,14 @@ This repository provides a modular data science pipeline for clustering hospital
 ├── clustering.py              # Distance metrics, clustering algorithms, and evaluators 
 ├── /preprocessing_data        # Input cohort/lab data (user-supplied) and all necessary preprocessed data
 ├── /distance_matrices         # Load/save required distance matrix  
-├── /metric_results            # Outputs: parameterised subfolders for all experiments 
-├── /plots                     # All generated visualisations 
+├── /metric_results            # Outputs: parameterised subfolders for all experiments that include all generated plots & CSVs
 ├── README.md
 ```
 
 ## Installation
 ### 1. Clone the Repository
 ```
-git clone https://github.com/yourusername/patient-trajectory-clustering.git
+git clone https://github.com/AhadAshfaq/Patient-Trajectory-Clustering.git
 cd patient-trajectory-clustering
 ```
 ### 2. Install Dependencies
@@ -79,7 +78,7 @@ To run the pipeline with the current configuration:
 python main.py
 ```
 
-* Adjust experiment settings (lab feature selection, window length, clustering methods, etc.) in hyperparameters.py.
+* Adjust experiment settings (lab feature selection, window length, clustering methods, etc.) in 'hyperparameters.py'.
 * Modular execution flags allow running only specific pipeline stages or algorithm variants.
 
 ## Customisation & Extensibility
