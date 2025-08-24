@@ -55,7 +55,7 @@ def load_data():
 
     else:
         # These paths should be adapted if data is relocated
-        data_path_cohort = "C:/Ahad/Project/data/cohort1_target.csv"         # Adjust path as needed
+        data_path_cohort = "C:/Ahad/Project/data/cohort_target.csv"         # Adjust path as needed
         data_path_labevent = "C:/Ahad/Project/data/labevents.csv"            # Adjust path as needed
         cohort_data = utils.loading_data(data_path_cohort,  'dischtime')
         labevents_data = utils.loading_data(data_path_labevent, 'charttime')
