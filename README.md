@@ -71,10 +71,10 @@ pip install -r requirements.txt
 ### 3. Prepare Data
 This project requires the following **two key input files** for preprocessing:
 
-1. **Cohort File (`cohort1_target.csv`):**  
+1. **Cohort File (`cohort_target.csv`):**  
    Contains patient-level and admission-level metadata including patient IDs, admission IDs, and key outcomes (e.g., admission and discharge times , target labels).  
    * **File size:** Relatively small  
-   * **Provision:** Included in this repository as `cohort1_target.csv`
+   * **Provision:** Included in this repository as `cohort_target.csv`
 
 2. **Lab Events File (`labevents.csv`):**  
    Contains detailed laboratory measurement records linked to patient admissions, with timestamps and lab test identifiers.  
