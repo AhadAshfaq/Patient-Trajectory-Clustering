@@ -69,8 +69,23 @@ pip install -r requirements.txt
 ```
 
 ### 3. Prepare Data
-Place the relevant cohort and lab events files in the /data directory.
-Make sure you have appropriate permissions for the dataset (e.g., MIMIC-IV).
+This project requires the following **two key input files** for preprocessing:
+
+1. **Cohort File (`cohort1_target.csv`):**  
+   Contains patient-level and admission-level metadata including patient IDs, admission IDs, and key outcomes (e.g., admission and discharge times , target labels).  
+   - **File size:** Relatively small  
+   - **Provision:** Included in this repository as `cohort1_target.csv`
+
+2. **Lab Events File (`labevents.csv`):**  
+   Contains detailed laboratory measurement records linked to patient admissions, with timestamps and lab test identifiers.  
+   - **File size:** Very large (e.g., >17 GB), too large to host here.  
+   - **Provision:** Due to size, this file is **NOT included** in the repository.  
+   - **Access instructions:** The data is sourced from the [MIMIC-IV Clinical Database](https://physionet.org/content/mimiciv).  
+     Researchers must obtain access via credentialed request and download the relevant `hosp/labevents` extraction.  
+   - Alternatively, users can prepare and provide their own lab event extracts in the same format.
+
+3. **Data Placement:**
+   - Place the relevant cohort and lab events files in the`/data` directory.
 
 ## Usage
 To run the pipeline with the current configuration:
