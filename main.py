@@ -449,7 +449,7 @@ def run_clustering(filtered_common_labs_percent, pivot_percent, feature_matrix_p
     if utils.should_run("AGG_COSINE_UNIMPUTED", RUN_ALL, RUN_FLAGS):
 
         # Create per-method/per-threshold output directory
-        cosine_dir = os.path.join("metric_results", f"{PCT_LABEL}_threshold", "Agglomertaive_cosine_clustering_unimputed")
+        cosine_dir = os.path.join("metric_results", f"{PCT_LABEL}_threshold", "Agglomerative_cosine_clustering_unimputed")
         os.makedirs(cosine_dir, exist_ok=True)
 
         metrics_df_agg_cos, dist_cos = run_agglomerative_metrics_cosine(
