@@ -33,6 +33,7 @@ This repository provides a modular data science pipeline for clustering hospital
 * Calinski–Harabasz Index
 * Davies–Bouldin Index
 * Fisher’s Exact Test for associating cluster results with target outcomes (with multiple-testing correction)
+* Cluster Feature Analysis - Mann Whitney Test
 
 ### Output & Logging
 * Experiment results saved to parameterised folders (all relevant thresholds/choices encoded in folder names)
