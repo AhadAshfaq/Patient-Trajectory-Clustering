@@ -56,7 +56,7 @@ This repository provides a modular data science pipeline for clustering hospital
 ├── /distance_matrices         # Load/save required distance matrix  
 ├── /metric_results            # Outputs: parameterised subfolders for all experiments that include all generated plots & CSVs
 ├── /cluster_interpretation    # Spectral Cluster-level stats & plots (see cluster_analysis.py for functions to load/aggregate cluster assignments, Fisher results,                                  lab features, statistical test CSVs, and generate boxplots/barplots)
-├── /Result_figures            # Advanced plots, tables, and cluster interpretation outputs
+├── /Result_figures            # Advanced plots, tables, and clustering analysis outputs
 ├── README.md
 ```
 
