@@ -94,7 +94,7 @@ python main.py
 * Adjust experiment settings (lab feature selection, window length, clustering methods, etc.) in 'hyperparameters.py'.
 * Modular execution flags allow running only specific pipeline stages or algorithm variants.
 
-## Cluster Interpretation & Clinical Significance
+## Clustering Analysis & Clinical Significance
 The cluster_analysis.py module produces advanced evaluation and interpretation outputs:
 * **Clustering Results 1:** Compare clustering algorithms and thresholds using standard validity indices.
 * **Clustering Results 2:** Evaluate distance metrics for agglomerative clustering and highlight best performers.
