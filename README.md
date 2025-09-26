@@ -80,7 +80,7 @@ This project requires two dataset files, which you need to acquire by following 
 2. **Lab Events File (`labevents.csv`):**  
    Contains detailed laboratory measurement records linked to patient admissions, with timestamps and lab test identifiers.  
 
-Researchers must obtain access via credentialed request and download the relevant extraction. Alternatively, users can prepare and provide their dataset files in the same format.
+Researchers must obtain access via credentialed request and download the relevant extraction. `Alternatively`, users can prepare and provide their dataset files in the same format.
 
 3. **Data Placement:**
    Place the required cohort and lab events files inside the /data directory at the root of the project. Ensure that the file paths in the load_data() function within main.py correctly point to these files before running the pipeline.
