@@ -99,7 +99,7 @@ The cluster_analysis.py module produces advanced evaluation and interpretation o
 * **Clustering Results 1:** Compare clustering algorithms and thresholds using standard validity indices.
 * **Clustering Results 2:** Evaluate distance metrics for agglomerative clustering and highlight best performers.
 * **Clustering Results 3:** Assess effects of imputation and binary/numeric encoding on clustering quality.
-* **Significance Tables and Plots:** Identify clusters with significant Fisher’s test results, summarize cluster sizes and p-values, and visualize discriminatory laboratory markers across patient groups (all statistical tests FDR-corrected).
+* **Significance Tables and Plots:** Identify clusters with significant Fisher’s test results, summarize cluster sizes and p-values, and visualize discriminatory laboratory markers across patient groups using Mann-Whitney Test.
 
 ### How to Use:
 To run the cluster analysis and generate summary figures/tables:
