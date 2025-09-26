@@ -1,6 +1,6 @@
 from imports import *
 
-# ----------- Utility extraction functions -----------
+# ---------- Utility extraction functions -----------
 def extract_k(filename: str):
     """Extracts the cluster count (k) from a filename using regex."""
     match = re.search(r'k=(\d+)', filename)
